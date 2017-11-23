@@ -5,6 +5,50 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
+        <div id="wrapper">
+            <h1> Welcome to my Contact Page </h1>
+
+            <form>
+                <div id="fnamebox">
+                    <label> First Name: </label>
+                    <input id="fnameinput" type="text">
+                </div>
+                <div id="lnamebox">
+                    <label> Last Name: </label>
+                    <input id="lnameinput" type="text">
+                </div>
+                
+                <label id="descriptionlabel"> Description: </label>
+                <textarea id="descriptioninput" rows="10" col="100"> </textarea>
+
+                <input id="adduser" type="button" value="Add User"> 
+            </form>
+
+            <div id="card">
+            </div>
+
+            
+        </div>
+
+        <!-- GoogleAPI jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- jQuery Code --> 
+        <script> 
+            $(document).ready(function() {
+
+                $('#adduser').click(function() {
+                    var firstname = $('#fnameinput').val();
+                    console.log(firstname);
+                    var lastname = $('#lnameinput').val();
+                    console.log(lastname);
+                    var description = $('#descriptioninput').val();
+                    console.log(description);
+
+                    $('#card').append('<h1>' + firstname + ' ' + lastname + '</h1><p> Click for description! </p>');
+                });
+
+            });
+        </script>
     </body>
 </html>

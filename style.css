@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: inline-block;
+    width: 25%;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+#descriptionlabel {
+    display: block;
+    margin: 10px 0 10px 0;  
+}
+
+#adduser {
+    display: block;
+    margin: 10px;
+}
+
+#appendfname, #appendlname {
+    display: inline-block;
+}
+
+#card{
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+    border: 5px solid black;
+    text-align: center;
+}
+
+#card h1 {
+    display: inline-block;
+    margin: 10px;
+}
+
+#card p {
+    margin-bottom: 10px;
+}
+
+
