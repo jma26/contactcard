@@ -24,7 +24,7 @@
                 <input id="adduser" type="button" value="Add User"> 
             </form>
 
-            <div id="card">
+            <div id="card-wrapper">
             </div>
 
             
@@ -45,7 +45,15 @@
                     var description = $('#descriptioninput').val();
                     console.log(description);
 
-                    $('#card').append('<h1>' + firstname + ' ' + lastname + '</h1><p> Click for description! </p>');
+                    $('#card-wrapper').append('<div id="card"><h1>' + firstname + ' ' + lastname + '</h1><p> Click for description! </p></div>');
+
+// .Toggle?
+// .on(click for the description);
+
+
+
+
+                    $()
                 });
 
             });

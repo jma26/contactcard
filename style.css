@@ -34,7 +34,7 @@ form {
     display: inline-block;
 }
 
-#card{
+#card-wrapper {
     vertical-align: top;
     display: inline-block;
     width: 70%;
@@ -42,13 +42,11 @@ form {
     text-align: center;
 }
 
-#card h1 {
+#card {
     display: inline-block;
     margin: 10px;
-}
-
-#card p {
-    margin-bottom: 10px;
+    border: 2px solid green;
+    padding: 15px;
 }
 
 
