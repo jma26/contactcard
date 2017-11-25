@@ -45,17 +45,14 @@
                     var description = $('#descriptioninput').val();
                     console.log(description);
 
-                    $('#card-wrapper').append('<div id="card"><h1>' + firstname + ' ' + lastname + '</h1><p> Click for description! </p></div>');
+                    $('#card-wrapper').append('<div id="card"><h1>' + firstname + ' ' + lastname + '</h1><p> Click for description! </p><p id="card-description">' + description + '</p></div>');
 
-// .Toggle?
-// .on(click for the description);
-
-
-
-
-                    $()
                 });
 
+                $(document).on('click', '#card', function() {
+                    $(this).children().fadeToggle();
+                });
+                
             });
         </script>
     </body>

@@ -49,4 +49,8 @@ form {
     padding: 15px;
 }
 
+#card-description {
+    display: none;
+}
+
 
